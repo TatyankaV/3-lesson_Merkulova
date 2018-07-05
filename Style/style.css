@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*{transition: all .1s ease-in;}
+
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+    background-color: white;
+}
+.container {
+   margin: 20px;
+}
+header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #4a4f56;
+    color: #eb7e7f;
+    text-align: center;
+}
+main{
+    background-color:#3b3f45;
+    height: 500px;
+    font-size: 25px;
+    padding-top: 30px;
+   
+}
+.list{
+    color: white;
+    width: 550px;
+    margin: auto;
+    background-color: #88839e;
+    
+
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+    
+    padding:10px ;
+}
+li:nth-child(2n) {
+    background-color:#7a7593;
+}
+li:hover{
+    border-bottom: 2px  solid  white;
+    border-top:2px  solid  white; 
+    background-color:#625d77;
+}
+input[type=checkbox] {
+    transform:scale(1.8);
+    opacity:0.9;
+    cursor:pointer;
+    margin-left:10px ;
+    margin-right: 10px;
+}
+input[type=checkbox]:checked+label {
+    text-decoration:line-through;    
+}
+.small-text{
+    font-size: 16px;
+}
+.button {
+    height: 50px;
+    color: white;
+    width: 550px;
+    margin: auto;
+    background-color: #4a4f56;
+    margin-top: 30px;
+    color: #eb7e7f;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+}
+.small-text:before{
+    content: "(";
+    margin-right: 5px ;
+    
+}
+.small-text::after{
+    content: ")";
+    margin-left: 5px ;
+    
+}
+li:active {
+    background: red;
+}
+
+/* margin: 0 auto  выравнивание по центру sdngs - иконки*/
